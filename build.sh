@@ -1,3 +1,4 @@
+#!/bin/bash
 # License: CC BY-NC-SA 4.0
 # build.sh
 #
@@ -5,13 +6,11 @@
 #
 # Written by AlexeyFilich 2020
 
-#!/bin/bash
-
 FLAGS=""
 LIBS=""
 INCLUDE=""
-INCLUDE += "-I\"third-party/tools-storage/include\" "
-INCLUDE += "-I\"third-party/tools-stuff/include\" "
+INCLUDE+="-Ithird-party/tools-storage/include/ "
+INCLUDE+="-Ithird-party/tools-stuff/include/ "
 
 NAME=${2%.*}
 FOLDER=${2%/*}
